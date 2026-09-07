@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>학습 기록 · 확원</title>
+<meta name="description" content="오늘 푼 문제와 정답률, 과정별 진행률을 한눈에 확인하세요." />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="progress">
+
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>학습 기록</h1>
+      <p>오늘 얼마나 공부했는지, 과정마다 어디까지 왔는지 확인하세요.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div id="today-summary"></div>
+      <h2 class="section-title">과정별 진행률</h2>
+      <p class="section-sub">개념 학습과 문제 풀이를 마칠 때마다 올라갑니다.</p>
+      <div class="record-list" id="record-list"></div>
+      <div class="danger-zone">
+        <p>기록은 이 브라우저에만 저장됩니다. 처음부터 다시 시작하려면 초기화하세요.</p>
+        <button class="btn btn-quiet" id="reset-btn" type="button">학습 기록 초기화</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/progress.js"></script>
+</body>
+</html>
